@@ -65,24 +65,26 @@ function Drop(ev) {
         items = sessionStorage.getItem("items" + tableId);
         items = JSON.parse(items);
         var present = check(items, foodItem);
-        var totalAmt = parseFloat(document.getElementById(itemAmt).innerText), totalItems = 1;
-    if(items!=null){
-        for (var i = 0; i < items.length; i++) {
-            if(items[i]==null)
-            continue;
-            totalAmt += parseFloat(items[i].price) * parseFloat(items[i].servings);
-            totalItems += parseInt(items[i].servings);
-        }
-        console.log(totalAmt + " " + totalItems);
-        tableAmt.innerHTML = totalAmt;
-        tableItems.innerHTML = totalItems;
+        var totalAmt = 0.0, totalItems = 0;
+        if (!present){
+            if(items==null) items=[];
+                items.push({ table: tableId, name: foodItem, price: document.getElementById(itemAmt).innerText, servings: 1 });
+            }
+        if(items!=null){
+            for (var i = 0; i < items.length; i++) {
+                if(items[i]==null)
+                continue;
+                totalAmt += parseFloat(items[i].price) * parseFloat(items[i].servings);
+                totalItems += parseInt(items[i].servings);
+            }
+            console.log(totalAmt + " " + totalItems);
+            tableAmt.innerHTML = totalAmt;
+            tableItems.innerHTML = totalItems;
+    
 
     }}
-    if (!present){
-    if(items==null) items=[];
-        items.push({ table: tableId, name: foodItem, price: document.getElementById(itemAmt).innerText, servings: 1 });
-    }
-    items = JSON.stringify(items);
+   
+        items = JSON.stringify(items);
     sessionStorage.setItem("items" + tableId, items);
 
 
