@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>ZemosoRestaurant</title>
+    <link href="RestaurantStyling.css" rel="stylesheet" type="text/css">
+    <script src="search.js"></script>
+</head>
+
+<body>
+
+
+    </div>
+    <div id="sidebar">
+        <h1> Tables</h1>
+        <div id="sideSearch">
+            <input type="text" id="tableSearch" placeholder="search" style="width:200px;height:30px;"
+                onkeyup="searchTable()">
+        </div><br>
+        <div class="table" ondrop="Drop(event)" ondragover="allowDrop(event)" id="1" onclick="orderDetails(event)">
+            <h3>Table 1</h3><br>
+            <span class="txt">Rs.</span><span id="amount">0</span>|<span class="txt">Total Items.</span>
+            <span id="items">0</span>
+        </div>
+        <br><br>
+        <div class="table" ondrop="Drop(event)" ondragover="allowDrop(event)" id="2" onclick="orderDetails(event)">
+            <h3>Table 2</h3><br>
+            <span class="txt">Rs. </span>
+            <span id="amount">0</span>|<span class="txt">Total Items.</span><span id="items">0</span>
+        </div><br><br>
+        <div class="table" ondrop="Drop(event)" ondragover="allowDrop(event)" id="3" onclick="orderDetails(event)">
+            <h3>Table 3</h3><br>
+            <span class="txt">Rs. </span><span id="amount">0</span> |<span class="txt">Total Items.</span>
+            <span id="items">0</span>
+        </div>
+    </div>
+    <div class="border"></div>
+
+    <div id="main">
+        <h1>Menu</h1>
+
+        <div id="search">
+            <input type="text" id="menuSearch" placeholder="search" style="width:100%;height:30px;"
+                onkeyup="searchMenu()">
+        </div><br>
+        <div id="popup">
+            <h2>order details <button class="close" onclick="closePopup(event)">&times;</button></h2>
+           
+
+        </div>
+        <div class="menu" draggable="true" ondragstart="drag(event)" id="french">
+            <h2 style="float: left;" class="item">French Fries</h2>
+            <span style="opacity: 0.7;float: left;clear:left" id="amt1">105.0</span>
+        </div>
+
+        <div class="menu" draggable="true" ondragstart="drag(event)" id="burger">
+            <h2 style="float: left;" class="item">Burger</h2>
+            <span style="opacity: 0.7;float: left;clear:left" id="amt2">100.0</span>
+        </div>
+        <div class="menu" draggable="true" ondragstart="drag(event)" id="pizza">
+            <h2 style="float: left;" class="item">Pizza</h2>
+            <span style="opacity: 0.7;float: left;clear:left" id="amt3">150.0</span>
+        </div>
+        <div class="menu" draggable="true" ondragstart="drag(event)" id="ch.burger">
+            <h2 style="float: left;" class="item">Cheese Burger</h2>
+            <span style="opacity: 0.7;float: left;clear:left" id="amt4">120.0</span>
+        </div>
+        <div class="menu" draggable="true" ondragstart="drag(event)" id="coke">
+            <h2 style="float: left;" class="item">Coke</h2>
+            <span style="opacity: 0.7;float: left;clear:left" id="amt5">90.0</span>
+        </div>
+    </div>
+</body>
+
+</html>
