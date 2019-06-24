@@ -1,0 +1,17 @@
+
+`javascript:UnusedVariableu"6Remove the declaration of the unused 'table' variable.(³Şà‡ÿÿÿÿÿ
+Yjavascript:S1854u"8Remove this useless assignment to local variable "table"(³Şà‡ÿÿÿÿÿ
+mjavascript:S2814›"KRename "itemPrice" as this name is already used in declaration at line 122.(ŸŞØıûÿÿÿÿ
+gjavascript:S2814™"JRename "itemName" as this name is already used in declaration at line 119.(äî“
+hjavascript:S2814£"FRename "name" as this name is already used in declaration at line 129.(ê›ä‡şÿÿÿÿ
+kjavascript:S2814œ"NRename "itemServings" as this name is already used in declaration at line 121.(ı‘«ï
+jjavascript:S2814¡"HRename "itemNo" as this name is already used in declaration at line 127.(˜Ğ¢ûÿÿÿÿ
+bjavascript:S2814š"ERename "sno" as this name is already used in declaration at line 120.(ì®¡…
+tjavascript:S3973–"WUse curly braces or indentation to denote the code conditionally executed by this "if".(Ğ˜¤¯
+djavascript:S2814¢"GRename "price" as this name is already used in declaration at line 128.(Ê®§Â
+sjavascript:S3973K"WUse curly braces or indentation to denote the code conditionally executed by this "if".(Ğ˜¤¯
+sjavascript:S3973_"WUse curly braces or indentation to denote the code conditionally executed by this "if".(Ğ˜¤¯
+ejavascript:S2814 "HRename "itemNo" as this name is already used in declaration at line 127.(åÃğ
+kjavascript:S2814"IRename "newLine" as this name is already used in declaration at line 123.(®ı†Şıÿÿÿÿ
+tjavascript:S3973Ü"WUse curly braces or indentation to denote the code conditionally executed by this "if".(Ğ˜¤¯
+Vjavascript:S1854 "9Remove this useless assignment to local variable "itemNo"(åÃğ

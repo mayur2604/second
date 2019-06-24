@@ -12,10 +12,10 @@ function searchMenu() {
         var item = list[i].getElementsByTagName("h2")[0];
         var val = item.innerText;
         val = val.toLowerCase();
-        if (!val.startsWith(x))
+         if (!val.startsWith(x))
             list[i].style.display = "none";
 
-        else list[i].style.display = "";
+         else list[i].style.display = "";
     }
 }
 function searchTable() {
