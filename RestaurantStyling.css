@@ -67,7 +67,7 @@ position: relative;
 .itemPrice{
     opacity: 0.7;
     float: left;
-    clear:left
+    clear:left;
 }
 #menuSearch{
     width:100%;
